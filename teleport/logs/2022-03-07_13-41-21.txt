@@ -1,0 +1,319 @@
+[2022-03-07 13:41:21:INFO]: Connecting...
+[2022-03-07 13:41:21:INFO]: Connected! Production DC2 - IPv4 - TCPAbridgedO
+[2022-03-07 13:41:22:INFO]: Session initialized: Layer 112
+[2022-03-07 13:41:22:INFO]: Device: CPython 3.7.6 - Pyrogram 0.17.1
+[2022-03-07 13:41:22:INFO]: System: Windows 10 (EN)
+[2022-03-07 13:41:22:INFO]: Synced "@f8ner" in 11.7321 ms
+[2022-03-07 13:41:22:INFO]: Today all started
+[2022-03-07 13:41:22:INFO]: Today -1001703205363 started
+[2022-03-07 13:41:22:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205363)
+[2022-03-07 13:41:22:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 13:41:22:ERROR]: 460693903
+Traceback (most recent call last):
+  File "bot.py", line 52, in extractor_from_message
+    owner
+  File "D:\JNotebook\teleport\teleport\extractor.py", line 73, in extract_from_text
+    msg_config = dict(CHATS_CONFIG[chat_id]['users'][user_id])
+KeyError: 460693903
+[2022-03-07 13:41:22:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 13:41:22:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 13:41:22:ERROR]: [WinError 183] Невозможно создать файл, так как он уже существует: 'public/-1001703205363/actual'
+Traceback (most recent call last):
+  File "D:\JNotebook\teleport\teleport\extractor.py", line 140, in extract_to_xls_file
+    makedirs(filename)
+  File "C:\ProgramData\Anaconda3\lib\os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [WinError 183] Невозможно создать файл, так как он уже существует: 'public/-1001703205363/actual'
+[2022-03-07 13:41:22:INFO]: Today -1001703205364 started
+[2022-03-07 13:41:22:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205364)
+[2022-03-07 13:41:22:ERROR]: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+Traceback (most recent call last):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1688, in resolve_peer
+    return self.storage.get_peer_by_id(peer_id)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\storage\sqlite_storage.py", line 108, in get_peer_by_id
+    raise KeyError("ID not found: {}".format(peer_id))
+KeyError: 'ID not found: -1001703205364'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 83, in force_in_mem_today_actual_for_all
+    force_in_mem_update_today_extract_for_chat(handled_chat_id)
+  File "bot.py", line 63, in force_in_mem_update_today_extract_for_chat
+    for message in app.iter_history(chat_id):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\iter_history.py", line 85, in iter_history
+    reverse=reverse
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\get_history.py", line 94, in get_history
+    peer=self.resolve_peer(chat_id),
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1742, in resolve_peer
+    access_hash=0
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1410, in send
+    r = self.session.send(data, retries, timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 439, in send
+    return self._send(data, timeout=timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 426, in _send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\errors\rpc_error.py", line 84, in raise_it
+    is_unknown=False)
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+[2022-03-07 13:41:22:INFO]: Today -1001703205365 started
+[2022-03-07 13:41:22:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205365)
+[2022-03-07 13:41:22:ERROR]: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+Traceback (most recent call last):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1688, in resolve_peer
+    return self.storage.get_peer_by_id(peer_id)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\storage\sqlite_storage.py", line 108, in get_peer_by_id
+    raise KeyError("ID not found: {}".format(peer_id))
+KeyError: 'ID not found: -1001703205365'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 83, in force_in_mem_today_actual_for_all
+    force_in_mem_update_today_extract_for_chat(handled_chat_id)
+  File "bot.py", line 63, in force_in_mem_update_today_extract_for_chat
+    for message in app.iter_history(chat_id):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\iter_history.py", line 85, in iter_history
+    reverse=reverse
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\get_history.py", line 94, in get_history
+    peer=self.resolve_peer(chat_id),
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1742, in resolve_peer
+    access_hash=0
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1410, in send
+    r = self.session.send(data, retries, timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 439, in send
+    return self._send(data, timeout=timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 426, in _send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\errors\rpc_error.py", line 84, in raise_it
+    is_unknown=False)
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+[2022-03-07 13:41:22:INFO]: Today all finish
+[2022-03-07 13:41:33:INFO]: Send 8 acks
+[2022-03-07 13:41:42:INFO]: Synced "@f8ner" in 13.0019 ms
+[2022-03-07 13:42:02:INFO]: Synced "@f8ner" in 8.63242 ms
+[2022-03-07 13:42:22:INFO]: Synced "@f8ner" in 14.8408 ms
+[2022-03-07 13:42:41:INFO]: Send 8 acks
+[2022-03-07 13:42:42:INFO]: Synced "@f8ner" in 11.9963 ms
+[2022-03-07 13:43:02:INFO]: Synced "@f8ner" in 10.9572 ms
+[2022-03-07 13:43:06:INFO]: Today all started
+[2022-03-07 13:43:06:INFO]: Today -1001703205363 started
+[2022-03-07 13:43:06:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205363)
+[2022-03-07 13:43:07:INFO]: Send 8 acks
+[2022-03-07 13:43:07:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 13:43:07:ERROR]: 460693903
+Traceback (most recent call last):
+  File "bot.py", line 52, in extractor_from_message
+    owner
+  File "D:\JNotebook\teleport\teleport\extractor.py", line 73, in extract_from_text
+    msg_config = dict(CHATS_CONFIG[chat_id]['users'][user_id])
+KeyError: 460693903
+[2022-03-07 13:43:07:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 13:43:07:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 13:43:07:ERROR]: [WinError 183] Невозможно создать файл, так как он уже существует: 'public/-1001703205363/actual'
+Traceback (most recent call last):
+  File "D:\JNotebook\teleport\teleport\extractor.py", line 140, in extract_to_xls_file
+    makedirs(filename)
+  File "C:\ProgramData\Anaconda3\lib\os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [WinError 183] Невозможно создать файл, так как он уже существует: 'public/-1001703205363/actual'
+[2022-03-07 13:43:07:INFO]: Today -1001703205364 started
+[2022-03-07 13:43:07:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205364)
+[2022-03-07 13:43:07:ERROR]: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+Traceback (most recent call last):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1688, in resolve_peer
+    return self.storage.get_peer_by_id(peer_id)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\storage\sqlite_storage.py", line 108, in get_peer_by_id
+    raise KeyError("ID not found: {}".format(peer_id))
+KeyError: 'ID not found: -1001703205364'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 83, in force_in_mem_today_actual_for_all
+    force_in_mem_update_today_extract_for_chat(handled_chat_id)
+  File "bot.py", line 63, in force_in_mem_update_today_extract_for_chat
+    for message in app.iter_history(chat_id):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\iter_history.py", line 85, in iter_history
+    reverse=reverse
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\get_history.py", line 94, in get_history
+    peer=self.resolve_peer(chat_id),
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1742, in resolve_peer
+    access_hash=0
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1410, in send
+    r = self.session.send(data, retries, timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 439, in send
+    return self._send(data, timeout=timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 426, in _send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\errors\rpc_error.py", line 84, in raise_it
+    is_unknown=False)
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+[2022-03-07 13:43:07:INFO]: Today -1001703205365 started
+[2022-03-07 13:43:07:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205365)
+[2022-03-07 13:43:07:ERROR]: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+Traceback (most recent call last):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1688, in resolve_peer
+    return self.storage.get_peer_by_id(peer_id)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\storage\sqlite_storage.py", line 108, in get_peer_by_id
+    raise KeyError("ID not found: {}".format(peer_id))
+KeyError: 'ID not found: -1001703205365'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 83, in force_in_mem_today_actual_for_all
+    force_in_mem_update_today_extract_for_chat(handled_chat_id)
+  File "bot.py", line 63, in force_in_mem_update_today_extract_for_chat
+    for message in app.iter_history(chat_id):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\iter_history.py", line 85, in iter_history
+    reverse=reverse
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\get_history.py", line 94, in get_history
+    peer=self.resolve_peer(chat_id),
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1742, in resolve_peer
+    access_hash=0
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1410, in send
+    r = self.session.send(data, retries, timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 439, in send
+    return self._send(data, timeout=timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 426, in _send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\errors\rpc_error.py", line 84, in raise_it
+    is_unknown=False)
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+[2022-03-07 13:43:07:INFO]: Today all finish
+[2022-03-07 13:43:22:INFO]: Synced "@f8ner" in 11.0583 ms
+[2022-03-07 13:43:42:INFO]: Synced "@f8ner" in 13.0091 ms
+[2022-03-07 13:44:02:INFO]: Synced "@f8ner" in 8.93641 ms
+[2022-03-07 13:44:10:INFO]: Send 8 acks
+[2022-03-07 13:44:22:INFO]: Synced "@f8ner" in 13.0036 ms
+[2022-03-07 13:44:42:INFO]: Synced "@f8ner" in 12.7001 ms
+[2022-03-07 13:44:56:INFO]: Today all started
+[2022-03-07 13:44:56:INFO]: Today -1001703205363 started
+[2022-03-07 13:44:56:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205363)
+[2022-03-07 13:44:56:INFO]: Send 8 acks
+[2022-03-07 13:44:56:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 13:44:56:ERROR]: 460693903
+Traceback (most recent call last):
+  File "bot.py", line 52, in extractor_from_message
+    owner
+  File "D:\JNotebook\teleport\teleport\extractor.py", line 73, in extract_from_text
+    msg_config = dict(CHATS_CONFIG[chat_id]['users'][user_id])
+KeyError: 460693903
+[2022-03-07 13:44:56:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 13:44:56:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 13:44:56:ERROR]: [WinError 183] Невозможно создать файл, так как он уже существует: 'public/-1001703205363/actual'
+Traceback (most recent call last):
+  File "D:\JNotebook\teleport\teleport\extractor.py", line 140, in extract_to_xls_file
+    makedirs(filename)
+  File "C:\ProgramData\Anaconda3\lib\os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [WinError 183] Невозможно создать файл, так как он уже существует: 'public/-1001703205363/actual'
+[2022-03-07 13:44:56:INFO]: Today -1001703205364 started
+[2022-03-07 13:44:56:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205364)
+[2022-03-07 13:44:56:ERROR]: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+Traceback (most recent call last):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1688, in resolve_peer
+    return self.storage.get_peer_by_id(peer_id)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\storage\sqlite_storage.py", line 108, in get_peer_by_id
+    raise KeyError("ID not found: {}".format(peer_id))
+KeyError: 'ID not found: -1001703205364'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 83, in force_in_mem_today_actual_for_all
+    force_in_mem_update_today_extract_for_chat(handled_chat_id)
+  File "bot.py", line 63, in force_in_mem_update_today_extract_for_chat
+    for message in app.iter_history(chat_id):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\iter_history.py", line 85, in iter_history
+    reverse=reverse
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\get_history.py", line 94, in get_history
+    peer=self.resolve_peer(chat_id),
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1742, in resolve_peer
+    access_hash=0
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1410, in send
+    r = self.session.send(data, retries, timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 439, in send
+    return self._send(data, timeout=timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 426, in _send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\errors\rpc_error.py", line 84, in raise_it
+    is_unknown=False)
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+[2022-03-07 13:44:56:INFO]: Today -1001703205365 started
+[2022-03-07 13:44:56:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205365)
+[2022-03-07 13:44:56:ERROR]: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+Traceback (most recent call last):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1688, in resolve_peer
+    return self.storage.get_peer_by_id(peer_id)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\storage\sqlite_storage.py", line 108, in get_peer_by_id
+    raise KeyError("ID not found: {}".format(peer_id))
+KeyError: 'ID not found: -1001703205365'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bot.py", line 83, in force_in_mem_today_actual_for_all
+    force_in_mem_update_today_extract_for_chat(handled_chat_id)
+  File "bot.py", line 63, in force_in_mem_update_today_extract_for_chat
+    for message in app.iter_history(chat_id):
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\iter_history.py", line 85, in iter_history
+    reverse=reverse
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\methods\messages\get_history.py", line 94, in get_history
+    peer=self.resolve_peer(chat_id),
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1742, in resolve_peer
+    access_hash=0
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\client\client.py", line 1410, in send
+    r = self.session.send(data, retries, timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 439, in send
+    return self._send(data, timeout=timeout)
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\session\session.py", line 426, in _send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\PropStui\AppData\Roaming\Python\Python37\site-packages\pyrogram\errors\rpc_error.py", line 84, in raise_it
+    is_unknown=False)
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: [400 CHANNEL_INVALID]: The channel parameter is invalid (caused by "channels.GetChannels")
+[2022-03-07 13:44:56:INFO]: Today all finish
+[2022-03-07 13:45:02:INFO]: Synced "@f8ner" in 36.0014 ms
+[2022-03-07 13:45:22:INFO]: Synced "@f8ner" in 10.9987 ms
+[2022-03-07 13:45:42:INFO]: Synced "@f8ner" in 11.0333 ms
+[2022-03-07 13:46:02:INFO]: Synced "@f8ner" in 11.8191 ms
+[2022-03-07 13:46:03:INFO]: Send 8 acks
+[2022-03-07 13:46:13:INFO]: Synced "@f8ner" in 13.927 ms
+[2022-03-07 13:46:13:INFO]: Disconnected

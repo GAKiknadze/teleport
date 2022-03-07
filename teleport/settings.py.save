@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+# telegram
+USER_NAME = ''
+API_ID = 
+API_HASH = ''
+
+# parser
+EXTRA_WORDS = [
+    'Silver', 'Bronze', 'Black',
+    'Blue', 'Pink'
+]
+EXTRA_WORDS = [s.lower() for s in EXTRA_WORDS]
+
+# debug
+DEBUG = False
+
+# handler
+# recommendation for developer: use chat int id's
+HANDLED_CHATS = {
+    -1001381147394: [631288367, 401959243],
+    # extractor test
+    -409330338: [-409330338]
+    # '@samsungmsk7978797879"': ['+7978797879", 'dylan'],
+}
+
+# etc
+DATE_WITH_TIME_FORMAT = '%Y-%m-%d_%H-%M-%S'
+DATE_FORMAT = '%Y-%m-%d'

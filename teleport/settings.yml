@@ -1,0 +1,70 @@
+telegram:
+  user_name: ''
+  api:
+    id: 0
+    hash: ''
+
+etc:
+  timestamps:
+    date_time: '%Y-%m-%d_%H-%M-%S'
+    date: '%Y-%m-%d'
+
+parser:
+  debug: false
+  extra:
+    Silver
+    Bronze
+    Black
+    Blue
+    Pink
+
+  # Сокращения для групп поиска
+  # :br: - Бренд
+  # :sr: - Серия
+  # :md: - Модель
+  # :cn: - Страна производитель
+  # :pr: - Цена
+  # В случае, когда:
+  # - бренд, серия и модель указаны в одной группе, ставьте параметр "br"
+  # - серия и модель указаны в одной группе, ставьте параметр "md"
+  chats:
+    -1001703205363:
+      users:
+        424167391:
+          item:
+            regular: '^(.*)  ([ \d,]*)$'
+            params:
+              0: br
+              1: pr
+
+    -1001703205364:
+      users:
+        424167391:
+          group:
+            regular: '\*([A-Za-z]+)([ \n]|\*(:\w{2}:) (.*) ?- ?(\d+)[₽* ]*[ ]*)*'
+            params:
+              0: br
+          item:
+            regular: '\*(:\w{2}:) (.*) ?- ?(\d+)[₽* ]*[ ]*'
+            params:
+              0: cn
+              1: md
+              2: pr
+
+    -1001703205365:
+      users:
+        424167391:
+          group:
+            regular: '^ *(\w.*)\n(( .*\n)(:\w{2}:.*\n| \n)+)+'
+            params:
+              0: br
+          subgroup:
+            regular: ' (.*)\n(:\w{2}:.*\n| \n)+'
+            params:
+              0: sr
+          item:
+            regular: '^(:\w{2}:)(.*)  ([ \d,]*)\n'
+            params:
+              0: cn
+              1: md
+              2: pr

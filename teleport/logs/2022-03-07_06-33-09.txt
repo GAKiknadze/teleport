@@ -1,0 +1,34 @@
+[2022-03-07 06:33:09:INFO]: Connecting...
+[2022-03-07 06:33:09:INFO]: Connected! Production DC2 - IPv4 - TCPAbridgedO
+[2022-03-07 06:33:09:INFO]: Session initialized: Layer 112
+[2022-03-07 06:33:09:INFO]: Device: CPython 3.7.6 - Pyrogram 0.17.1
+[2022-03-07 06:33:09:INFO]: System: Windows 10 (EN)
+[2022-03-07 06:33:09:INFO]: Synced "@f8ner" in 22.9888 ms
+[2022-03-07 06:33:09:INFO]: Today all started
+[2022-03-07 06:33:09:INFO]: Today -1001703205363 started
+[2022-03-07 06:33:09:INFO]: delete_extract_container_folder(extracted/2022-03-07/-1001703205363)
+[2022-03-07 06:33:10:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 06:33:10:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 06:33:10:ERROR]: Message without text
+Traceback (most recent call last):
+  File "bot.py", line 43, in extractor_from_message
+    raise Exception('Message without text')
+Exception: Message without text
+[2022-03-07 06:33:10:ERROR]: [WinError 183] Невозможно создать файл, так как он уже существует: 'public/-1001703205363/actual'
+Traceback (most recent call last):
+  File "D:\JNotebook\teleport\teleport\extractor.py", line 139, in extract_to_xls_file
+    makedirs(filename)
+  File "C:\ProgramData\Anaconda3\lib\os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [WinError 183] Невозможно создать файл, так как он уже существует: 'public/-1001703205363/actual'
+[2022-03-07 06:33:10:INFO]: Today all finish
+[2022-03-07 06:33:23:INFO]: Synced "@f8ner" in 19.0661 ms
+[2022-03-07 06:33:23:INFO]: Disconnected

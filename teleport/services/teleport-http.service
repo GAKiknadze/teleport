@@ -1,0 +1,12 @@
+[Unit]
+Description=Message handler for telegram chats
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/teleport/
+ExecStart=/bin/bash /opt/teleport/run-http.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,59 @@
+[2021-06-08 00:53:02:INFO]: Connecting...
+[2021-06-08 00:53:02:INFO]: Connected! Production DC2 - IPv4 - TCPAbridgedO
+[2021-06-08 00:53:03:INFO]: Session initialized: Layer 112
+[2021-06-08 00:53:03:INFO]: Device: CPython 3.6.9 - Pyrogram 0.17.1
+[2021-06-08 00:53:03:INFO]: System: Linux 4.15.0-144-generic (EN)
+[2021-06-08 00:53:03:INFO]: Synced "dtohmahov" in 7.96795 ms
+[2021-06-08 00:53:03:INFO]: Today all started
+[2021-06-08 00:53:03:INFO]: Today -1001173851201 started
+[2021-06-08 00:53:03:INFO]: delete_extract_container_folder(extracted/2021-06-08/-1001173851201)
+[2021-06-08 00:53:03:ERROR]: [Errno 17] File exists: 'public/-1001173851201/actual'
+Traceback (most recent call last):
+  File "/opt/teleport/extractor.py", line 189, in extract_to_xls_file
+    makedirs(filename)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: 'public/-1001173851201/actual'
+[2021-06-08 00:53:03:INFO]: Today -1001381147394 started
+[2021-06-08 00:53:03:INFO]: delete_extract_container_folder(extracted/2021-06-08/-1001381147394)
+[2021-06-08 00:53:04:ERROR]: [Errno 17] File exists: 'public/-1001381147394/actual'
+Traceback (most recent call last):
+  File "/opt/teleport/extractor.py", line 189, in extract_to_xls_file
+    makedirs(filename)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: 'public/-1001381147394/actual'
+[2021-06-08 00:53:04:INFO]: Today -409330338 started
+[2021-06-08 00:53:04:INFO]: delete_extract_container_folder(extracted/2021-06-08/-409330338)
+[2021-06-08 00:53:04:ERROR]: [Errno 17] File exists: 'public/-409330338/actual'
+Traceback (most recent call last):
+  File "/opt/teleport/extractor.py", line 189, in extract_to_xls_file
+    makedirs(filename)
+  File "/usr/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: 'public/-409330338/actual'
+[2021-06-08 00:53:04:INFO]: Today all finish
+[2021-06-08 00:53:06:INFO]: Send 8 acks
+[2021-06-08 00:53:23:INFO]: Synced "dtohmahov" in 10.8287 ms
+[2021-06-08 00:53:43:INFO]: Synced "dtohmahov" in 10.1283 ms
+[2021-06-08 00:54:03:INFO]: Synced "dtohmahov" in 20.1809 ms
+[2021-06-08 00:54:23:INFO]: Synced "dtohmahov" in 6.59323 ms
+[2021-06-08 00:54:43:INFO]: Synced "dtohmahov" in 6.81233 ms
+[2021-06-08 00:55:03:INFO]: Synced "dtohmahov" in 8.89421 ms
+[2021-06-08 00:55:23:INFO]: Synced "dtohmahov" in 6.44708 ms
+[2021-06-08 00:55:43:INFO]: Synced "dtohmahov" in 6.6123 ms
+[2021-06-08 00:56:03:INFO]: Synced "dtohmahov" in 17.5967 ms
+[2021-06-08 00:56:23:INFO]: Synced "dtohmahov" in 7.23553 ms
+[2021-06-08 00:56:43:INFO]: Synced "dtohmahov" in 7.4203 ms
+[2021-06-08 00:57:03:INFO]: Synced "dtohmahov" in 8.99601 ms
+[2021-06-08 00:57:23:INFO]: Synced "dtohmahov" in 8.83484 ms
+[2021-06-08 00:57:32:INFO]: Send 8 acks
+[2021-06-08 00:57:43:INFO]: Synced "dtohmahov" in 8.28648 ms
+[2021-06-08 00:58:03:INFO]: Synced "dtohmahov" in 7.46608 ms
+[2021-06-08 00:58:23:INFO]: Synced "dtohmahov" in 8.73971 ms
+[2021-06-08 00:58:43:INFO]: Synced "dtohmahov" in 7.15065 ms
+[2021-06-08 00:59:03:INFO]: Synced "dtohmahov" in 7.18093 ms
+[2021-06-08 00:59:23:INFO]: Synced "dtohmahov" in 6.49214 ms
+[2021-06-08 00:59:43:INFO]: Synced "dtohmahov" in 6.63877 ms
+[2021-06-08 00:59:55:INFO]: Synced "dtohmahov" in 19.125 ms
+[2021-06-08 00:59:55:INFO]: Disconnected
